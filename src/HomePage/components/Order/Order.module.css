@@ -1,0 +1,57 @@
+.Order {
+    margin-top: 100px;
+    margin-bottom: 100px
+}
+
+
+.h3style {
+    margin-bottom: 17px;
+    color:rgb(238 151 40);
+    font-weight: bold;
+}
+
+
+
+.OrderButtonStyle {
+    width: 220px;
+    height: 40px;
+    background: rgb(255 ,166 ,52);  /* Old browsers */
+    border-radius: 3px;
+    border: none;
+    box-shadow: 0px 2px 9px -3px #3e3e3e;
+    transition: background-color 0.5s ease-in-out;
+    color: #f4f4f4
+}
+
+
+button:focus {outline:0;}
+
+.OrderButtonStyle span {
+    display: block;
+}
+
+.OrderButtonStyle:hover {
+    background: rgb(238 151 40);
+}
+
+.BurgerPhoto {
+    max-width: 100%;
+}
+
+.Lets p {
+    text-align: start;
+}
+
+h6 {
+    margin-bottom: 15px;
+}
+
+@media (max-width: 767px) {
+    .BurgerPhoto {
+        display: none;
+    }
+    .Lets {
+        text-align: center;
+    }
+}
+

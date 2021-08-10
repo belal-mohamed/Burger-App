@@ -1,0 +1,19 @@
+.ErrorMessage {
+    padding: 0.05px;
+}
+
+.NotFound {
+    margin: 110px auto 50px;
+    width: 50%;
+    text-align: center;
+}
+
+.img {
+    max-width: 100%;
+}
+
+@media(max-width: 510px) {
+    .NotFound h2 {
+        font-size: 28px;
+    }
+}

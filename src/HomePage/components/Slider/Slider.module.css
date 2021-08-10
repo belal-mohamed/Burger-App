@@ -1,0 +1,21 @@
+.orange {
+    font-weight: lighter;
+    background-color: rgba(212, 113, 14, 0.5);
+}
+
+.slider {
+    margin-top: 70px;
+}
+
+@media (max-width: 650px ) {
+    .hide {
+        display: none;
+    }
+}
+
+@media (max-width: 400px ) {
+    .slider h3 {
+        font-size: 15px;
+    }
+}
+

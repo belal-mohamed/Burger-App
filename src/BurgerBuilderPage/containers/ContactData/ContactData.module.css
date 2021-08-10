@@ -1,0 +1,110 @@
+.ContactData {
+    padding: 0.05px;
+}
+
+.InnerContact {
+    width: 50%;
+    margin: auto;
+    background-color: white;
+    box-shadow: 0px 2px 7px 0px #ccc;
+    /* , 0px 47px 64px -6px #f7f7f7 inset; */
+    border-radius: 2%;
+    text-align: center;
+    padding: 20px;
+    margin: 120px auto 50px; 
+}
+
+.InnerContact input {
+    display: block;
+    margin: 2% auto 1%;
+    outline: none;
+    padding: 13px;
+    width: 60%;
+    border: 1px solid #eaeaea;
+    box-shadow: 0px 2px 7px -5px #ccc;
+    height: 41px;
+    color:#737373;
+}
+
+.FormHeader {
+    text-align: center;
+    font-weight: bold;
+}
+
+.FormHeader::after {
+    content: '';
+    display: block;
+    width: 20%;
+    height: 3px;
+    background: rgb(255 ,166 ,52);
+    margin: 1% auto;
+}
+
+.ContactData .Error, .ContactData .Approved {
+    color: red;
+    font-weight:bold;
+    font-size:10px
+}
+
+.ContactData .Approved {
+    color: green;
+}
+
+.ContactData .Approved::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f058";
+    color: #959382;
+    font-weight: 900;
+    display: none;
+}
+
+.Approved svg {
+    color: green;
+}
+
+
+.InnerContact .Email::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f044";
+    color: #959382;
+    font-weight: 900;
+    display: none;
+}
+
+.InnerContact .Email svg {
+    color: #191919;
+    display: inline-block;
+}
+
+.InnerContact input:focus {
+    outline: none;
+}
+
+.Button {
+    display: inline-block;
+    margin: 1%;
+}
+
+@media(max-width: 960px) {
+    .InnerContact {
+        width: 60%;
+    }
+}
+
+@media(max-width: 824px) {
+    .InnerContact {
+        width: 80%;
+    }
+}
+
+@media(max-width: 625px) {
+    .InnerContact {
+        width: 94%;
+    }
+}
+
+@media(max-width: 400px) {
+    .InnerContact input{
+        width: 90%;
+    }
+}

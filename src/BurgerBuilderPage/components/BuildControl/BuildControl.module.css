@@ -1,0 +1,50 @@
+.BuildControl {
+    margin: 10px 0 10px 0;
+    text-align: center;
+}
+
+.BuildControl button, .Lable, .Price{
+    width: 120px;
+    padding: 10px;
+    background: rgb(255 ,166 ,52);  /* Old browsers */
+    border-radius: 3px;
+    border: none;
+    box-shadow: 0px 2px 9px -3px #3e3e3e;
+    transition: background-color 0.3s ease-in-out;
+    color: #f4f4f4;
+    display: inline-block;
+}
+
+.Price {
+    width: 200px;
+    margin: 4px 1% 4px 1%;
+}
+button:focus {outline:0;}
+
+button:hover {
+    background: rgb(238 151 40);
+}
+
+.BuildControl div button:last-child, .BuildControl div button:first-child  {
+    width: 30px;
+    margin: 4px 1% 4px 1%;
+}
+
+button:disabled {
+    background-color: rgb(162 162 162);
+}
+
+@media (max-width: 767px) {
+    .BuildControl button, .Lable, .Price {
+        padding: 5px;
+    }
+}
+
+@keyframes bom {
+    from {
+        transform: scale(1.1, 1.1);
+    }
+    to {
+        transform: scale(1,1);
+    }
+}

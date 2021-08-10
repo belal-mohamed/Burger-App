@@ -1,0 +1,65 @@
+.OrderSummary {
+    position: fixed;
+    left: 25%;
+    top: 25%;
+    min-height:56%;
+    text-align: center;
+    padding: 22PX;
+    z-index: 1000;
+    color: #212529;
+    background: linear-gradient(#ffc928, #ff8700);
+    width: 50%;
+    box-shadow: 0px 3px 28px -10px #000000;
+    border-radius: 3%;
+    transition: all 0.3s ease-in-out ;
+    animation: bom .2s ease-in-out 0s 1 none running;
+    display: flex;
+    flex-direction: column;
+}
+
+.OrderSummary h5 {
+    font-weight: bold;
+}
+
+.List {
+    margin: 2%;
+    list-style: none;
+    box-shadow: 0px 6px 6px -10px #252525;
+    transition: all .3s ease-in-out;
+}
+
+.List:hover {
+    box-shadow: 0px 6px 6px -9px #252525;
+}
+
+.OrderSummary button { 
+    padding: 10px;
+    background: rgb(24, 24, 24);
+    border-radius: 3px;
+    border: none;
+    box-shadow: 0px 2px 9px -3px #3e3e3e;
+    transition: background-color 0.3s ease-in-out;
+    color: #cacaca;
+    display: inline-block;
+    margin: 1%;
+}
+
+.OrderSummary button:hover {
+    background-color: rgb(219 ,37 ,31);
+}
+
+@media(max-width:620px) {
+    .OrderSummary {
+        width: 80%;
+        left: 10%;
+        top: 20%;
+    }
+}
+@keyframes bom {
+    from {
+        transform: scale(1.1, 1.1);
+    }
+    to {
+        transform: scale(1,1);
+    }
+}

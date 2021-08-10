@@ -1,0 +1,24 @@
+.carousel-indicators li {
+    width: 9px !important;
+    height: 9px !important;
+    border-radius: 50%;
+  }
+  
+.carousel-indicators .active {
+  opacity: 1;
+  background-color:#ff9800;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+  
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.form-control:focus {
+  border-color: #cacaca;
+  box-shadow: none;
+}

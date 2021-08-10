@@ -1,0 +1,179 @@
+.main-burger {
+    margin-top: 110px;
+    margin-bottom: 40px
+}
+.BurgerIngredients {
+    width: 100%;
+    max-height: 500px;
+    margin: auto;
+    overflow: auto;
+    text-align: center;
+}
+
+.BreadBottom, .BreadTop {
+    height: 90px;
+    width: 40%;
+    background: linear-gradient(#fbc830, #ec922c);
+    position: relative;
+    margin: 10px auto;
+    box-shadow: 0px 4px 10px 1px #bdbdbd;
+    overflow: hidden;
+}
+.BreadBottom {
+    border-radius: 0 0 30px 30px;
+}
+
+.BreadTop {
+    border-radius: 50% 50% 0 0;
+}
+
+.Seeds1, .Seeds3, .Seeds4, .Seeds2 {
+    width: 1%;
+    height: 10%;
+    position: absolute;
+    background-color: white;
+    left: 43%;
+    top: 63%;
+    border-radius: 40%;
+    transform: rotate(-10deg);
+    box-shadow: inset -2px -3px #c9c9c9;
+}
+
+.Seeds4 {
+    left: 80%;
+}
+.Seeds3 {
+    left: 25%;
+    top: 58%;
+}
+
+.Seeds1:after, .Seeds3:after, .Seeds4:after, .Seeds2:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: white;
+    left: -1000%;
+    top: -260%;
+    border-radius: 40%;
+    transform: rotate(60deg);
+    box-shadow: inset -1px 2px #c9c9c9;
+  }
+  
+.Seeds1:before,.Seeds3:before, .Seeds4:before, .Seeds2:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: white;
+    left: 1000%;
+    top: -50%;
+    border-radius: 40%;
+    transform: rotate(60deg);
+    box-shadow: inset -1px -3px #c9c9c9;
+  }
+
+  .Seeds2 {
+    left: 80%;
+    top: 50%;
+
+  }
+
+  .Seeds2:after {
+      left: -3000%;
+  }
+  
+
+.Meat {
+    width: 40%;
+    height: 41px;
+    background: linear-gradient(#984815, #702e05);
+    margin: 2% auto;
+    border-radius: 15px;
+    box-shadow: 0px 3px 10px 1px #bdbdbd;
+}
+
+.Cheese {
+    width: 40%;
+    height: 30px;
+    margin: 2% auto;
+    background: linear-gradient(#ffde25, #e0c112);
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0px 3px 9px 1px #bdbdbd , inset 2px 6px 1px 0 #ecc906;
+    /* /* box-shadow: inset 2px 6px 1px 0 #ecc906; */
+}
+
+.Salad {
+    width: 45%;
+    height: 26px;
+    margin: 1% auto;
+    background: linear-gradient(#228c1d, #91ce50);
+    border-radius: 20px;
+    box-shadow: 0px 1px 8px 1px #bdbdbd;
+}
+
+.Bacon {
+    width: 40%;
+    height: 37px;
+    background: linear-gradient(#ea3e0f, #c45e38);
+    margin: 2% auto;
+    border-radius: 35px 39px 13px 14px;
+    box-shadow: 0px 1px 8px 1px #bdbdbd;
+}
+.Meat , .Cheese , .Bacon , .Salad {
+    animation: bom .4s ease-in-out 0s 1 none running;
+}
+
+.successful-order {
+    margin: 100px auto 0px;
+    display: block;
+    width: 40%
+}
+
+
+
+@media (min-width: 992px) {
+    .BreadBottom, .BreadTop {
+        height: 100px;
+    }
+
+    .BurgerIngredients {
+        width: 70%;
+    }
+}
+
+@media (max-width: 790px) {
+    .BurgerIngredients {
+        width: 100%;
+    }
+}
+
+@media (max-width: 560px) {
+    .BurgerIngredients {
+        width: 100%;
+    }
+    .BreadBottom, .BreadTop{
+        width: 60%;
+    }
+
+    .BreadBottom, .BreadTop, .Meat , .Cheese , .Bacon {
+        width: 55%;
+    }
+    .Salad {
+        width: 65%;
+    }
+}
+
+
+
+
+
+@keyframes bom {
+    from {
+        transform: scale(1.1, 1.1);
+    }
+    to {
+        transform: scale(1,1);
+    }
+}
+

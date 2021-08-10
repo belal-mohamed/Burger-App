@@ -1,0 +1,71 @@
+.Order {
+    padding: 5px;
+}
+
+.Order .InnerOrder:first-of-type {
+    margin-top: 110px;
+}
+
+.InnerOrder {
+    margin: 0 auto 40px;
+    text-align: center;
+    width: 70%;
+    padding: 21px;
+    background-color: white;
+    box-shadow: 0px 5px 13px -7px #ccc;
+    position: relative;
+}
+
+.Circle {
+    content: '';
+    display: flex;
+    background-color: #ffc21d;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: -26px;
+    left: -18px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    box-shadow: 10px 10px 10px 10px #fab90a inset;
+    margin-right: 10%;
+}
+
+.InnerOrder ul li {
+    list-style: none;
+    font-size: 18px;
+    border: 1px solid #f7f7f7;
+    box-shadow: 0px 2px 5px -4px #ccc;
+    margin-bottom: 4px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.InnerOrder ul li:hover {
+   background-color:#fbfbfb;
+   transition: all 0.2s ease-in-out;
+}
+
+.InnerOrder h6 {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.InnerOrder span {
+    font-size: 16px;
+    color: #db251e;
+    font-weight: bold;
+}
+.InnerOrder h6::after {
+    content: '';
+    display: block;
+    width: 77px;
+    height: 3px;
+    background-color: #ffc21d;
+    margin: 4px auto;
+}
+
